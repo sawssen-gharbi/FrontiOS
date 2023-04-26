@@ -1,0 +1,906 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F2AA77CDBB44C5E110ECDBC /* Pods_BackToLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97663F6F755CF43CB8F6B5E9 /* Pods_BackToLife.framework */; };
+		7A0540A629F7277D00B15F30 /* MoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0540A529F7277D00B15F30 /* MoodViewModel.swift */; };
+		7A12915029D3324700468FCB /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A12914F29D3324700468FCB /* Report.swift */; };
+		7A29BA0429F8923F004E9974 /* GoogleSevice-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A29BA0329F8923F004E9974 /* GoogleSevice-Info.plist */; };
+		7A3C617A29DE1DF900345A55 /* AddReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3C617929DE1DF900345A55 /* AddReport.swift */; };
+		7A3E612129E4B68600634CA3 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 7A3E612029E4B68600634CA3 /* SwiftUIX */; };
+		7A5E10FE29E8D2C7000ADDAD /*  CaptionedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5E10FD29E8D2C7000ADDAD /*  CaptionedTextField.swift */; };
+		7A5E110029E8D36A000ADDAD /* ViewableSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5E10FF29E8D36A000ADDAD /* ViewableSecureField.swift */; };
+		7A5E110229E8DA4B000ADDAD /* MoodService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5E110129E8DA4B000ADDAD /* MoodService.swift */; };
+		7AA800AC29E622B6007F72C7 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA800AB29E622B6007F72C7 /* UserData.swift */; };
+		7AA800AF29E623D6007F72C7 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA800AE29E623D6007F72C7 /* LoginViewModel.swift */; };
+		7ABAA86E29ECB9EE00723E3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABAA86D29ECB9EE00723E3A /* AppDelegate.swift */; };
+		7ABED4AD29EA0B0800964481 /* LoginGoogleView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ABED4AC29EA0B0800964481 /* LoginGoogleView.storyboard */; };
+		7ABED4AF29EA0B3900964481 /* LoginGoogleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABED4AE29EA0B3900964481 /* LoginGoogleViewController.swift */; };
+		7ABED4B329EA319500964481 /* ApplicationUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABED4B229EA319500964481 /* ApplicationUtility.swift */; };
+		7ACCF6B629C8C03B00CD8903 /* BackToLifeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCF6B529C8C03B00CD8903 /* BackToLifeApp.swift */; };
+		7ACCF6B829C8C03B00CD8903 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCF6B729C8C03B00CD8903 /* ContentView.swift */; };
+		7ACCF6BA29C8C03C00CD8903 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ACCF6B929C8C03C00CD8903 /* Assets.xcassets */; };
+		7ACCF6BD29C8C03C00CD8903 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ACCF6BC29C8C03C00CD8903 /* Preview Assets.xcassets */; };
+		7ACCF6BF29C8C03C00CD8903 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCF6BE29C8C03C00CD8903 /* Persistence.swift */; };
+		7ACCF6C229C8C03C00CD8903 /* BackToLife.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCF6C029C8C03C00CD8903 /* BackToLife.xcdatamodeld */; };
+		7ACCF6CC29C8C03C00CD8903 /* BackToLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCF6CB29C8C03C00CD8903 /* BackToLifeTests.swift */; };
+		7ACCF6D629C8C03C00CD8903 /* BackToLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCF6D529C8C03C00CD8903 /* BackToLifeUITests.swift */; };
+		7ACCF6D829C8C03C00CD8903 /* BackToLifeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCF6D729C8C03C00CD8903 /* BackToLifeUITestsLaunchTests.swift */; };
+		7ACCF6E629C8C05600CD8903 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCF6E529C8C05600CD8903 /* LoginView.swift */; };
+		7AE01F0929CDD77B00EE568D /* AddMood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE01F0829CDD77B00EE568D /* AddMood.swift */; };
+		7AF6847229E75580001FE3C4 /* AuthentificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF6847129E75580001FE3C4 /* AuthentificationService.swift */; };
+		838F4A757C343AD8FC6A9D83 /* Pods_BackToLifeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ACE7ACB526BC87C851924C4 /* Pods_BackToLifeTests.framework */; };
+		ED5F10C002E59CD1B27D9A1F /* Pods_BackToLife_BackToLifeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2053FCFD3E8AC3FA71B2B862 /* Pods_BackToLife_BackToLifeUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7ACCF6C829C8C03C00CD8903 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7ACCF6AA29C8C03B00CD8903 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7ACCF6B129C8C03B00CD8903;
+			remoteInfo = BackToLife;
+		};
+		7ACCF6D229C8C03C00CD8903 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7ACCF6AA29C8C03B00CD8903 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7ACCF6B129C8C03B00CD8903;
+			remoteInfo = BackToLife;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01A5458056E8C281E61E08F4 /* Pods-BackToLife-BackToLifeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BackToLife-BackToLifeUITests.release.xcconfig"; path = "Target Support Files/Pods-BackToLife-BackToLifeUITests/Pods-BackToLife-BackToLifeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2053FCFD3E8AC3FA71B2B862 /* Pods_BackToLife_BackToLifeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BackToLife_BackToLifeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ACE7ACB526BC87C851924C4 /* Pods_BackToLifeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BackToLifeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BF7470FE834C21C49E767BE /* Pods-BackToLife-BackToLifeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BackToLife-BackToLifeUITests.debug.xcconfig"; path = "Target Support Files/Pods-BackToLife-BackToLifeUITests/Pods-BackToLife-BackToLifeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		43834BAB1E8C051288EA8FD2 /* Pods-BackToLifeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BackToLifeTests.release.xcconfig"; path = "Target Support Files/Pods-BackToLifeTests/Pods-BackToLifeTests.release.xcconfig"; sourceTree = "<group>"; };
+		4F339033C542408E4B63CDC5 /* Pods-BackToLifeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BackToLifeTests.debug.xcconfig"; path = "Target Support Files/Pods-BackToLifeTests/Pods-BackToLifeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		79680152CAD7CF04789609A5 /* Pods-BackToLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BackToLife.release.xcconfig"; path = "Target Support Files/Pods-BackToLife/Pods-BackToLife.release.xcconfig"; sourceTree = "<group>"; };
+		7A0540A529F7277D00B15F30 /* MoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoodView\U0010Model.swift"; sourceTree = "<group>"; };
+		7A12914F29D3324700468FCB /* Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
+		7A29BA0329F8923F004E9974 /* GoogleSevice-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleSevice-Info.plist"; path = "../GoogleSevice-Info.plist"; sourceTree = "<group>"; };
+		7A3C617929DE1DF900345A55 /* AddReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReport.swift; sourceTree = "<group>"; };
+		7A5E10FD29E8D2C7000ADDAD /*  CaptionedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " CaptionedTextField.swift"; sourceTree = "<group>"; };
+		7A5E10FF29E8D36A000ADDAD /* ViewableSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewableSecureField.swift; sourceTree = "<group>"; };
+		7A5E110129E8DA4B000ADDAD /* MoodService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodService.swift; sourceTree = "<group>"; };
+		7AA800AB29E622B6007F72C7 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		7AA800AE29E623D6007F72C7 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		7ABAA86D29ECB9EE00723E3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7ABED4AC29EA0B0800964481 /* LoginGoogleView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginGoogleView.storyboard; sourceTree = "<group>"; };
+		7ABED4AE29EA0B3900964481 /* LoginGoogleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginGoogleViewController.swift; sourceTree = "<group>"; };
+		7ABED4B229EA319500964481 /* ApplicationUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationUtility.swift; sourceTree = "<group>"; };
+		7ACCF6B229C8C03B00CD8903 /* BackToLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackToLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ACCF6B529C8C03B00CD8903 /* BackToLifeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackToLifeApp.swift; sourceTree = "<group>"; };
+		7ACCF6B729C8C03B00CD8903 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7ACCF6B929C8C03C00CD8903 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7ACCF6BC29C8C03C00CD8903 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7ACCF6BE29C8C03C00CD8903 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		7ACCF6C129C8C03C00CD8903 /* BackToLife.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BackToLife.xcdatamodel; sourceTree = "<group>"; };
+		7ACCF6C729C8C03C00CD8903 /* BackToLifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackToLifeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ACCF6CB29C8C03C00CD8903 /* BackToLifeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackToLifeTests.swift; sourceTree = "<group>"; };
+		7ACCF6D129C8C03C00CD8903 /* BackToLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackToLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ACCF6D529C8C03C00CD8903 /* BackToLifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackToLifeUITests.swift; sourceTree = "<group>"; };
+		7ACCF6D729C8C03C00CD8903 /* BackToLifeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackToLifeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7ACCF6E529C8C05600CD8903 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = ../LoginView.swift; sourceTree = "<group>"; };
+		7AE01F0829CDD77B00EE568D /* AddMood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMood.swift; sourceTree = "<group>"; };
+		7AF6847129E75580001FE3C4 /* AuthentificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthentificationService.swift; sourceTree = "<group>"; };
+		97663F6F755CF43CB8F6B5E9 /* Pods_BackToLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BackToLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A14B8559B1377F52481CF7 /* Pods-BackToLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BackToLife.debug.xcconfig"; path = "Target Support Files/Pods-BackToLife/Pods-BackToLife.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7ACCF6AF29C8C03B00CD8903 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A3E612129E4B68600634CA3 /* SwiftUIX in Frameworks */,
+				4F2AA77CDBB44C5E110ECDBC /* Pods_BackToLife.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ACCF6C429C8C03C00CD8903 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				838F4A757C343AD8FC6A9D83 /* Pods_BackToLifeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ACCF6CE29C8C03C00CD8903 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED5F10C002E59CD1B27D9A1F /* Pods_BackToLife_BackToLifeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		328DE8199EDFF51FB6BB07A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97663F6F755CF43CB8F6B5E9 /* Pods_BackToLife.framework */,
+				2053FCFD3E8AC3FA71B2B862 /* Pods_BackToLife_BackToLifeUITests.framework */,
+				2ACE7ACB526BC87C851924C4 /* Pods_BackToLifeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A12914E29D3322B00468FCB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7A12914F29D3324700468FCB /* Report.swift */,
+				7AA800AB29E622B6007F72C7 /* UserData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7A5E10FB29E8C83E000ADDAD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7AF6847129E75580001FE3C4 /* AuthentificationService.swift */,
+				7A5E110129E8DA4B000ADDAD /* MoodService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7A5E10FC29E8D299000ADDAD /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7A5E10FD29E8D2C7000ADDAD /*  CaptionedTextField.swift */,
+				7A5E10FF29E8D36A000ADDAD /* ViewableSecureField.swift */,
+				7ABED4B229EA319500964481 /* ApplicationUtility.swift */,
+				7ABAA86D29ECB9EE00723E3A /* AppDelegate.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		7AA800AD29E623C3007F72C7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7AA800AE29E623D6007F72C7 /* LoginViewModel.swift */,
+				7ABED4AE29EA0B3900964481 /* LoginGoogleViewController.swift */,
+				7A0540A529F7277D00B15F30 /* MoodViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7ACCF6A929C8C03B00CD8903 = {
+			isa = PBXGroup;
+			children = (
+				7A29BA0329F8923F004E9974 /* GoogleSevice-Info.plist */,
+				7ACCF6B429C8C03B00CD8903 /* BackToLife */,
+				7ACCF6CA29C8C03C00CD8903 /* BackToLifeTests */,
+				7ACCF6D429C8C03C00CD8903 /* BackToLifeUITests */,
+				7ACCF6B329C8C03B00CD8903 /* Products */,
+				CDA61F0BED7C5DB05731BD2F /* Pods */,
+				328DE8199EDFF51FB6BB07A1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7ACCF6B329C8C03B00CD8903 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7ACCF6B229C8C03B00CD8903 /* BackToLife.app */,
+				7ACCF6C729C8C03C00CD8903 /* BackToLifeTests.xctest */,
+				7ACCF6D129C8C03C00CD8903 /* BackToLifeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7ACCF6B429C8C03B00CD8903 /* BackToLife */ = {
+			isa = PBXGroup;
+			children = (
+				7A5E10FC29E8D299000ADDAD /* Components */,
+				7A5E10FB29E8C83E000ADDAD /* Services */,
+				7AA800AD29E623C3007F72C7 /* ViewModel */,
+				7A12914E29D3322B00468FCB /* Models */,
+				7ACCF6E429C8C04200CD8903 /* Views */,
+				7ACCF6B529C8C03B00CD8903 /* BackToLifeApp.swift */,
+				7ACCF6B729C8C03B00CD8903 /* ContentView.swift */,
+				7ACCF6B929C8C03C00CD8903 /* Assets.xcassets */,
+				7ACCF6BE29C8C03C00CD8903 /* Persistence.swift */,
+				7ACCF6C029C8C03C00CD8903 /* BackToLife.xcdatamodeld */,
+				7ACCF6BB29C8C03C00CD8903 /* Preview Content */,
+			);
+			path = BackToLife;
+			sourceTree = "<group>";
+		};
+		7ACCF6BB29C8C03C00CD8903 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7ACCF6BC29C8C03C00CD8903 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7ACCF6CA29C8C03C00CD8903 /* BackToLifeTests */ = {
+			isa = PBXGroup;
+			children = (
+				7ACCF6CB29C8C03C00CD8903 /* BackToLifeTests.swift */,
+			);
+			path = BackToLifeTests;
+			sourceTree = "<group>";
+		};
+		7ACCF6D429C8C03C00CD8903 /* BackToLifeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7ACCF6D529C8C03C00CD8903 /* BackToLifeUITests.swift */,
+				7ACCF6D729C8C03C00CD8903 /* BackToLifeUITestsLaunchTests.swift */,
+			);
+			path = BackToLifeUITests;
+			sourceTree = "<group>";
+		};
+		7ACCF6E429C8C04200CD8903 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7AE01F0729CDD73500EE568D /* Reports */,
+				7AE01EFE29CDD63700EE568D /* Login */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7AE01EFE29CDD63700EE568D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7ABED4AC29EA0B0800964481 /* LoginGoogleView.storyboard */,
+				7ACCF6E529C8C05600CD8903 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		7AE01F0729CDD73500EE568D /* Reports */ = {
+			isa = PBXGroup;
+			children = (
+				7AE01F0829CDD77B00EE568D /* AddMood.swift */,
+				7A3C617929DE1DF900345A55 /* AddReport.swift */,
+			);
+			path = Reports;
+			sourceTree = "<group>";
+		};
+		CDA61F0BED7C5DB05731BD2F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97A14B8559B1377F52481CF7 /* Pods-BackToLife.debug.xcconfig */,
+				79680152CAD7CF04789609A5 /* Pods-BackToLife.release.xcconfig */,
+				3BF7470FE834C21C49E767BE /* Pods-BackToLife-BackToLifeUITests.debug.xcconfig */,
+				01A5458056E8C281E61E08F4 /* Pods-BackToLife-BackToLifeUITests.release.xcconfig */,
+				4F339033C542408E4B63CDC5 /* Pods-BackToLifeTests.debug.xcconfig */,
+				43834BAB1E8C051288EA8FD2 /* Pods-BackToLifeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7ACCF6B129C8C03B00CD8903 /* BackToLife */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7ACCF6DB29C8C03C00CD8903 /* Build configuration list for PBXNativeTarget "BackToLife" */;
+			buildPhases = (
+				B4AFCE20B8765C216EA7252C /* [CP] Check Pods Manifest.lock */,
+				7ACCF6AE29C8C03B00CD8903 /* Sources */,
+				7ACCF6AF29C8C03B00CD8903 /* Frameworks */,
+				7ACCF6B029C8C03B00CD8903 /* Resources */,
+				40742B39024A8DBA806F8288 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BackToLife;
+			packageProductDependencies = (
+				7A3E612029E4B68600634CA3 /* SwiftUIX */,
+			);
+			productName = BackToLife;
+			productReference = 7ACCF6B229C8C03B00CD8903 /* BackToLife.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7ACCF6C629C8C03C00CD8903 /* BackToLifeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7ACCF6DE29C8C03C00CD8903 /* Build configuration list for PBXNativeTarget "BackToLifeTests" */;
+			buildPhases = (
+				A956886F0DE09E5F21A0B420 /* [CP] Check Pods Manifest.lock */,
+				7ACCF6C329C8C03C00CD8903 /* Sources */,
+				7ACCF6C429C8C03C00CD8903 /* Frameworks */,
+				7ACCF6C529C8C03C00CD8903 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7ACCF6C929C8C03C00CD8903 /* PBXTargetDependency */,
+			);
+			name = BackToLifeTests;
+			productName = BackToLifeTests;
+			productReference = 7ACCF6C729C8C03C00CD8903 /* BackToLifeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7ACCF6D029C8C03C00CD8903 /* BackToLifeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7ACCF6E129C8C03C00CD8903 /* Build configuration list for PBXNativeTarget "BackToLifeUITests" */;
+			buildPhases = (
+				521C6E02FAC173EBDCD8B102 /* [CP] Check Pods Manifest.lock */,
+				7ACCF6CD29C8C03C00CD8903 /* Sources */,
+				7ACCF6CE29C8C03C00CD8903 /* Frameworks */,
+				7ACCF6CF29C8C03C00CD8903 /* Resources */,
+				7F89DDE1CB27216109EAD12F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7ACCF6D329C8C03C00CD8903 /* PBXTargetDependency */,
+			);
+			name = BackToLifeUITests;
+			productName = BackToLifeUITests;
+			productReference = 7ACCF6D129C8C03C00CD8903 /* BackToLifeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7ACCF6AA29C8C03B00CD8903 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					7ACCF6B129C8C03B00CD8903 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					7ACCF6C629C8C03C00CD8903 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 7ACCF6B129C8C03B00CD8903;
+					};
+					7ACCF6D029C8C03C00CD8903 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 7ACCF6B129C8C03B00CD8903;
+					};
+				};
+			};
+			buildConfigurationList = 7ACCF6AD29C8C03B00CD8903 /* Build configuration list for PBXProject "BackToLife" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7ACCF6A929C8C03B00CD8903;
+			packageReferences = (
+				7A3E611F29E4B68600634CA3 /* XCRemoteSwiftPackageReference "SwiftUIX" */,
+			);
+			productRefGroup = 7ACCF6B329C8C03B00CD8903 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7ACCF6B129C8C03B00CD8903 /* BackToLife */,
+				7ACCF6C629C8C03C00CD8903 /* BackToLifeTests */,
+				7ACCF6D029C8C03C00CD8903 /* BackToLifeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7ACCF6B029C8C03B00CD8903 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ACCF6BD29C8C03C00CD8903 /* Preview Assets.xcassets in Resources */,
+				7ACCF6BA29C8C03C00CD8903 /* Assets.xcassets in Resources */,
+				7A29BA0429F8923F004E9974 /* GoogleSevice-Info.plist in Resources */,
+				7ABED4AD29EA0B0800964481 /* LoginGoogleView.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ACCF6C529C8C03C00CD8903 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ACCF6CF29C8C03C00CD8903 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40742B39024A8DBA806F8288 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BackToLife/Pods-BackToLife-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BackToLife/Pods-BackToLife-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BackToLife/Pods-BackToLife-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		521C6E02FAC173EBDCD8B102 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BackToLife-BackToLifeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F89DDE1CB27216109EAD12F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BackToLife-BackToLifeUITests/Pods-BackToLife-BackToLifeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BackToLife-BackToLifeUITests/Pods-BackToLife-BackToLifeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BackToLife-BackToLifeUITests/Pods-BackToLife-BackToLifeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A956886F0DE09E5F21A0B420 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BackToLifeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4AFCE20B8765C216EA7252C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BackToLife-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7ACCF6AE29C8C03B00CD8903 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AA800AF29E623D6007F72C7 /* LoginViewModel.swift in Sources */,
+				7A3C617A29DE1DF900345A55 /* AddReport.swift in Sources */,
+				7ACCF6BF29C8C03C00CD8903 /* Persistence.swift in Sources */,
+				7A5E110229E8DA4B000ADDAD /* MoodService.swift in Sources */,
+				7AE01F0929CDD77B00EE568D /* AddMood.swift in Sources */,
+				7ACCF6E629C8C05600CD8903 /* LoginView.swift in Sources */,
+				7A12915029D3324700468FCB /* Report.swift in Sources */,
+				7ABED4AF29EA0B3900964481 /* LoginGoogleViewController.swift in Sources */,
+				7ABED4B329EA319500964481 /* ApplicationUtility.swift in Sources */,
+				7A5E10FE29E8D2C7000ADDAD /*  CaptionedTextField.swift in Sources */,
+				7A5E110029E8D36A000ADDAD /* ViewableSecureField.swift in Sources */,
+				7ACCF6B829C8C03B00CD8903 /* ContentView.swift in Sources */,
+				7AF6847229E75580001FE3C4 /* AuthentificationService.swift in Sources */,
+				7ACCF6B629C8C03B00CD8903 /* BackToLifeApp.swift in Sources */,
+				7A0540A629F7277D00B15F30 /* MoodViewModel.swift in Sources */,
+				7AA800AC29E622B6007F72C7 /* UserData.swift in Sources */,
+				7ABAA86E29ECB9EE00723E3A /* AppDelegate.swift in Sources */,
+				7ACCF6C229C8C03C00CD8903 /* BackToLife.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ACCF6C329C8C03C00CD8903 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ACCF6CC29C8C03C00CD8903 /* BackToLifeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ACCF6CD29C8C03C00CD8903 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ACCF6D829C8C03C00CD8903 /* BackToLifeUITestsLaunchTests.swift in Sources */,
+				7ACCF6D629C8C03C00CD8903 /* BackToLifeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7ACCF6C929C8C03C00CD8903 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7ACCF6B129C8C03B00CD8903 /* BackToLife */;
+			targetProxy = 7ACCF6C829C8C03C00CD8903 /* PBXContainerItemProxy */;
+		};
+		7ACCF6D329C8C03C00CD8903 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7ACCF6B129C8C03B00CD8903 /* BackToLife */;
+			targetProxy = 7ACCF6D229C8C03C00CD8903 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7ACCF6D929C8C03C00CD8903 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7ACCF6DA29C8C03C00CD8903 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7ACCF6DC29C8C03C00CD8903 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97A14B8559B1377F52481CF7 /* Pods-BackToLife.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BackToLife/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BackToLife/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esprit.BackToLife;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7ACCF6DD29C8C03C00CD8903 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79680152CAD7CF04789609A5 /* Pods-BackToLife.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BackToLife/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BackToLife/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esprit.BackToLife;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7ACCF6DF29C8C03C00CD8903 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F339033C542408E4B63CDC5 /* Pods-BackToLifeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esprit.BackToLifeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BackToLife.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BackToLife";
+			};
+			name = Debug;
+		};
+		7ACCF6E029C8C03C00CD8903 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43834BAB1E8C051288EA8FD2 /* Pods-BackToLifeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esprit.BackToLifeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BackToLife.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BackToLife";
+			};
+			name = Release;
+		};
+		7ACCF6E229C8C03C00CD8903 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BF7470FE834C21C49E767BE /* Pods-BackToLife-BackToLifeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esprit.BackToLifeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BackToLife;
+			};
+			name = Debug;
+		};
+		7ACCF6E329C8C03C00CD8903 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01A5458056E8C281E61E08F4 /* Pods-BackToLife-BackToLifeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esprit.BackToLifeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BackToLife;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7ACCF6AD29C8C03B00CD8903 /* Build configuration list for PBXProject "BackToLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ACCF6D929C8C03C00CD8903 /* Debug */,
+				7ACCF6DA29C8C03C00CD8903 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7ACCF6DB29C8C03C00CD8903 /* Build configuration list for PBXNativeTarget "BackToLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ACCF6DC29C8C03C00CD8903 /* Debug */,
+				7ACCF6DD29C8C03C00CD8903 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7ACCF6DE29C8C03C00CD8903 /* Build configuration list for PBXNativeTarget "BackToLifeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ACCF6DF29C8C03C00CD8903 /* Debug */,
+				7ACCF6E029C8C03C00CD8903 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7ACCF6E129C8C03C00CD8903 /* Build configuration list for PBXNativeTarget "BackToLifeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ACCF6E229C8C03C00CD8903 /* Debug */,
+				7ACCF6E329C8C03C00CD8903 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7A3E611F29E4B68600634CA3 /* XCRemoteSwiftPackageReference "SwiftUIX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftUIX/SwiftUIX.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7A3E612029E4B68600634CA3 /* SwiftUIX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A3E611F29E4B68600634CA3 /* XCRemoteSwiftPackageReference "SwiftUIX" */;
+			productName = SwiftUIX;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		7ACCF6C029C8C03C00CD8903 /* BackToLife.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7ACCF6C129C8C03C00CD8903 /* BackToLife.xcdatamodel */,
+			);
+			currentVersion = 7ACCF6C129C8C03C00CD8903 /* BackToLife.xcdatamodel */;
+			path = BackToLife.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7ACCF6AA29C8C03B00CD8903 /* Project object */;
+}
